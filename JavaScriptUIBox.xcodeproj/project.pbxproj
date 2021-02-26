@@ -16,6 +16,8 @@
 		40A8236425E989930081E6F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8236325E989930081E6F3 /* main.m */; };
 		40A8236E25E989930081E6F3 /* JavaScriptUIBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8236D25E989930081E6F3 /* JavaScriptUIBoxTests.m */; };
 		40A8237925E989930081E6F3 /* JavaScriptUIBoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8237825E989930081E6F3 /* JavaScriptUIBoxUITests.m */; };
+		40A8238C25E989D30081E6F3 /* UIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8238A25E989D20081E6F3 /* UIParser.m */; };
+		40A8239125E98A260081E6F3 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 40A8239025E98A260081E6F3 /* index.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		40A8237425E989930081E6F3 /* JavaScriptUIBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaScriptUIBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A8237825E989930081E6F3 /* JavaScriptUIBoxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptUIBoxUITests.m; sourceTree = "<group>"; };
 		40A8237A25E989930081E6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A8238A25E989D20081E6F3 /* UIParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIParser.m; sourceTree = "<group>"; };
+		40A8238B25E989D30081E6F3 /* UIParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIParser.h; sourceTree = "<group>"; };
+		40A8239025E98A260081E6F3 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,8 @@
 		40A8235025E989910081E6F3 /* JavaScriptUIBox */ = {
 			isa = PBXGroup;
 			children = (
+				40A8238F25E98A1D0081E6F3 /* Resources */,
+				40A8238925E989C00081E6F3 /* JSParser */,
 				40A8235125E989910081E6F3 /* AppDelegate.h */,
 				40A8235225E989910081E6F3 /* AppDelegate.m */,
 				40A8235425E989910081E6F3 /* SceneDelegate.h */,
@@ -135,6 +142,23 @@
 				40A8237A25E989930081E6F3 /* Info.plist */,
 			);
 			path = JavaScriptUIBoxUITests;
+			sourceTree = "<group>";
+		};
+		40A8238925E989C00081E6F3 /* JSParser */ = {
+			isa = PBXGroup;
+			children = (
+				40A8238B25E989D30081E6F3 /* UIParser.h */,
+				40A8238A25E989D20081E6F3 /* UIParser.m */,
+			);
+			path = JSParser;
+			sourceTree = "<group>";
+		};
+		40A8238F25E98A1D0081E6F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40A8239025E98A260081E6F3 /* index.js */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +267,7 @@
 				40A8236125E989930081E6F3 /* LaunchScreen.storyboard in Resources */,
 				40A8235E25E989930081E6F3 /* Assets.xcassets in Resources */,
 				40A8235C25E989910081E6F3 /* Main.storyboard in Resources */,
+				40A8239125E98A260081E6F3 /* index.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +294,7 @@
 			files = (
 				40A8235925E989910081E6F3 /* ViewController.m in Sources */,
 				40A8235325E989910081E6F3 /* AppDelegate.m in Sources */,
+				40A8238C25E989D30081E6F3 /* UIParser.m in Sources */,
 				40A8236425E989930081E6F3 /* main.m in Sources */,
 				40A8235625E989910081E6F3 /* SceneDelegate.m in Sources */,
 			);
