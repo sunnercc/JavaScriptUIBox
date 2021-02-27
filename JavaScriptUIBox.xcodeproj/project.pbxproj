@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CFC5AC93BC3DD5C11F1D532 /* Pods_JavaScriptUIBox_JavaScriptUIBoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF92249263D21C16F44B64A /* Pods_JavaScriptUIBox_JavaScriptUIBoxUITests.framework */; };
+		0ECC33B47677BDA535518538 /* Pods_JavaScriptUIBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A102A07F8602E2FD1A2021C /* Pods_JavaScriptUIBox.framework */; };
 		40A8235325E989910081E6F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8235225E989910081E6F3 /* AppDelegate.m */; };
 		40A8235625E989910081E6F3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8235525E989910081E6F3 /* SceneDelegate.m */; };
 		40A8235925E989910081E6F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8235825E989910081E6F3 /* ViewController.m */; };
@@ -16,8 +18,14 @@
 		40A8236425E989930081E6F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8236325E989930081E6F3 /* main.m */; };
 		40A8236E25E989930081E6F3 /* JavaScriptUIBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8236D25E989930081E6F3 /* JavaScriptUIBoxTests.m */; };
 		40A8237925E989930081E6F3 /* JavaScriptUIBoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8237825E989930081E6F3 /* JavaScriptUIBoxUITests.m */; };
-		40A8238C25E989D30081E6F3 /* UIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8238A25E989D20081E6F3 /* UIParser.m */; };
 		40A8239125E98A260081E6F3 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 40A8239025E98A260081E6F3 /* index.js */; };
+		40A823A025EA9F930081E6F3 /* JSEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A8239F25EA9F930081E6F3 /* JSEngine.m */; };
+		40A823A225EAA34C0081E6F3 /* engine.js in Resources */ = {isa = PBXBuildFile; fileRef = 40A823A125EAA34C0081E6F3 /* engine.js */; };
+		40A823A725EAA70F0081E6F3 /* TypeConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A823A625EAA70F0081E6F3 /* TypeConvert.m */; };
+		40A823AA25EAAAFF0081E6F3 /* JSRenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A823A925EAAAFF0081E6F3 /* JSRenderManager.m */; };
+		40A823AD25EAB5800081E6F3 /* ColorConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A823AC25EAB5800081E6F3 /* ColorConvert.m */; };
+		40A823C025EACA390081E6F3 /* UIView+JSExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A823BF25EACA390081E6F3 /* UIView+JSExport.m */; };
+		F9FC0F981B8F835AE52BFA8B /* Pods_JavaScriptUIBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00490956B1329599BE4AA832 /* Pods_JavaScriptUIBoxTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00490956B1329599BE4AA832 /* Pods_JavaScriptUIBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaScriptUIBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF92249263D21C16F44B64A /* Pods_JavaScriptUIBox_JavaScriptUIBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaScriptUIBox_JavaScriptUIBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A102A07F8602E2FD1A2021C /* Pods_JavaScriptUIBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaScriptUIBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A8234E25E989910081E6F3 /* JavaScriptUIBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaScriptUIBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A8235125E989910081E6F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40A8235225E989910081E6F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,9 +67,24 @@
 		40A8237425E989930081E6F3 /* JavaScriptUIBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaScriptUIBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A8237825E989930081E6F3 /* JavaScriptUIBoxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptUIBoxUITests.m; sourceTree = "<group>"; };
 		40A8237A25E989930081E6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40A8238A25E989D20081E6F3 /* UIParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIParser.m; sourceTree = "<group>"; };
-		40A8238B25E989D30081E6F3 /* UIParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIParser.h; sourceTree = "<group>"; };
 		40A8239025E98A260081E6F3 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		40A8239E25EA9F930081E6F3 /* JSEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSEngine.h; sourceTree = "<group>"; };
+		40A8239F25EA9F930081E6F3 /* JSEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSEngine.m; sourceTree = "<group>"; };
+		40A823A125EAA34C0081E6F3 /* engine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = engine.js; sourceTree = "<group>"; };
+		40A823A525EAA70F0081E6F3 /* TypeConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeConvert.h; sourceTree = "<group>"; };
+		40A823A625EAA70F0081E6F3 /* TypeConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeConvert.m; sourceTree = "<group>"; };
+		40A823A825EAAAFF0081E6F3 /* JSRenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSRenderManager.h; sourceTree = "<group>"; };
+		40A823A925EAAAFF0081E6F3 /* JSRenderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSRenderManager.m; sourceTree = "<group>"; };
+		40A823AB25EAB5800081E6F3 /* ColorConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConvert.h; sourceTree = "<group>"; };
+		40A823AC25EAB5800081E6F3 /* ColorConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorConvert.m; sourceTree = "<group>"; };
+		40A823BE25EACA390081E6F3 /* UIView+JSExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JSExport.h"; sourceTree = "<group>"; };
+		40A823BF25EACA390081E6F3 /* UIView+JSExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSExport.m"; sourceTree = "<group>"; };
+		7168F069311D92EEF6346EC1 /* Pods-JavaScriptUIBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaScriptUIBox.debug.xcconfig"; path = "Target Support Files/Pods-JavaScriptUIBox/Pods-JavaScriptUIBox.debug.xcconfig"; sourceTree = "<group>"; };
+		781CBF5172FED55182ACBD98 /* Pods-JavaScriptUIBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaScriptUIBoxTests.release.xcconfig"; path = "Target Support Files/Pods-JavaScriptUIBoxTests/Pods-JavaScriptUIBoxTests.release.xcconfig"; sourceTree = "<group>"; };
+		8261EDA7068EB0EA78F96E41 /* Pods-JavaScriptUIBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaScriptUIBox.release.xcconfig"; path = "Target Support Files/Pods-JavaScriptUIBox/Pods-JavaScriptUIBox.release.xcconfig"; sourceTree = "<group>"; };
+		8BAFE32A1BE08AFDE49E2623 /* Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-JavaScriptUIBox-JavaScriptUIBoxUITests/Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D21F47F343D9829988C81DE0 /* Pods-JavaScriptUIBoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaScriptUIBoxTests.debug.xcconfig"; path = "Target Support Files/Pods-JavaScriptUIBoxTests/Pods-JavaScriptUIBoxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF6799D68C897CDF302026A9 /* Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.release.xcconfig"; path = "Target Support Files/Pods-JavaScriptUIBox-JavaScriptUIBoxUITests/Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECC33B47677BDA535518538 /* Pods_JavaScriptUIBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FC0F981B8F835AE52BFA8B /* Pods_JavaScriptUIBoxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFC5AC93BC3DD5C11F1D532 /* Pods_JavaScriptUIBox_JavaScriptUIBoxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +122,8 @@
 				40A8236C25E989930081E6F3 /* JavaScriptUIBoxTests */,
 				40A8237725E989930081E6F3 /* JavaScriptUIBoxUITests */,
 				40A8234F25E989910081E6F3 /* Products */,
+				D956F832168F71E83D398748 /* Pods */,
+				F48DE52F8CD9221751D6CFCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,8 +140,11 @@
 		40A8235025E989910081E6F3 /* JavaScriptUIBox */ = {
 			isa = PBXGroup;
 			children = (
+				40A823BA25EAC8470081E6F3 /* Category */,
+				40A823A425EAA7010081E6F3 /* Convert */,
+				40A823A325EAA6FB0081E6F3 /* UI */,
 				40A8238F25E98A1D0081E6F3 /* Resources */,
-				40A8238925E989C00081E6F3 /* JSParser */,
+				40A8238925E989C00081E6F3 /* JSEngine */,
 				40A8235125E989910081E6F3 /* AppDelegate.h */,
 				40A8235225E989910081E6F3 /* AppDelegate.m */,
 				40A8235425E989910081E6F3 /* SceneDelegate.h */,
@@ -144,13 +178,14 @@
 			path = JavaScriptUIBoxUITests;
 			sourceTree = "<group>";
 		};
-		40A8238925E989C00081E6F3 /* JSParser */ = {
+		40A8238925E989C00081E6F3 /* JSEngine */ = {
 			isa = PBXGroup;
 			children = (
-				40A8238B25E989D30081E6F3 /* UIParser.h */,
-				40A8238A25E989D20081E6F3 /* UIParser.m */,
+				40A823A125EAA34C0081E6F3 /* engine.js */,
+				40A8239E25EA9F930081E6F3 /* JSEngine.h */,
+				40A8239F25EA9F930081E6F3 /* JSEngine.m */,
 			);
-			path = JSParser;
+			path = JSEngine;
 			sourceTree = "<group>";
 		};
 		40A8238F25E98A1D0081E6F3 /* Resources */ = {
@@ -161,6 +196,58 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		40A823A325EAA6FB0081E6F3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				40A823A825EAAAFF0081E6F3 /* JSRenderManager.h */,
+				40A823A925EAAAFF0081E6F3 /* JSRenderManager.m */,
+				40A823BE25EACA390081E6F3 /* UIView+JSExport.h */,
+				40A823BF25EACA390081E6F3 /* UIView+JSExport.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		40A823A425EAA7010081E6F3 /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				40A823A525EAA70F0081E6F3 /* TypeConvert.h */,
+				40A823A625EAA70F0081E6F3 /* TypeConvert.m */,
+				40A823AB25EAB5800081E6F3 /* ColorConvert.h */,
+				40A823AC25EAB5800081E6F3 /* ColorConvert.m */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		40A823BA25EAC8470081E6F3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D956F832168F71E83D398748 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7168F069311D92EEF6346EC1 /* Pods-JavaScriptUIBox.debug.xcconfig */,
+				8261EDA7068EB0EA78F96E41 /* Pods-JavaScriptUIBox.release.xcconfig */,
+				8BAFE32A1BE08AFDE49E2623 /* Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.debug.xcconfig */,
+				DF6799D68C897CDF302026A9 /* Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.release.xcconfig */,
+				D21F47F343D9829988C81DE0 /* Pods-JavaScriptUIBoxTests.debug.xcconfig */,
+				781CBF5172FED55182ACBD98 /* Pods-JavaScriptUIBoxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F48DE52F8CD9221751D6CFCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A102A07F8602E2FD1A2021C /* Pods_JavaScriptUIBox.framework */,
+				0DF92249263D21C16F44B64A /* Pods_JavaScriptUIBox_JavaScriptUIBoxUITests.framework */,
+				00490956B1329599BE4AA832 /* Pods_JavaScriptUIBoxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A8237D25E989930081E6F3 /* Build configuration list for PBXNativeTarget "JavaScriptUIBox" */;
 			buildPhases = (
+				316D619732C3B893164FBFE9 /* [CP] Check Pods Manifest.lock */,
 				40A8234A25E989910081E6F3 /* Sources */,
 				40A8234B25E989910081E6F3 /* Frameworks */,
 				40A8234C25E989910081E6F3 /* Resources */,
@@ -185,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A8238025E989930081E6F3 /* Build configuration list for PBXNativeTarget "JavaScriptUIBoxTests" */;
 			buildPhases = (
+				F01B18B6BA03AF9F9F184EEE /* [CP] Check Pods Manifest.lock */,
 				40A8236525E989930081E6F3 /* Sources */,
 				40A8236625E989930081E6F3 /* Frameworks */,
 				40A8236725E989930081E6F3 /* Resources */,
@@ -203,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A8238325E989930081E6F3 /* Build configuration list for PBXNativeTarget "JavaScriptUIBoxUITests" */;
 			buildPhases = (
+				4392514C11BAD26AE8BFF740 /* [CP] Check Pods Manifest.lock */,
 				40A8237025E989930081E6F3 /* Sources */,
 				40A8237125E989930081E6F3 /* Frameworks */,
 				40A8237225E989930081E6F3 /* Resources */,
@@ -268,6 +358,7 @@
 				40A8235E25E989930081E6F3 /* Assets.xcassets in Resources */,
 				40A8235C25E989910081E6F3 /* Main.storyboard in Resources */,
 				40A8239125E98A260081E6F3 /* index.js in Resources */,
+				40A823A225EAA34C0081E6F3 /* engine.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +378,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		316D619732C3B893164FBFE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JavaScriptUIBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4392514C11BAD26AE8BFF740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JavaScriptUIBox-JavaScriptUIBoxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F01B18B6BA03AF9F9F184EEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JavaScriptUIBoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40A8234A25E989910081E6F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A823AA25EAAAFF0081E6F3 /* JSRenderManager.m in Sources */,
+				40A823AD25EAB5800081E6F3 /* ColorConvert.m in Sources */,
 				40A8235925E989910081E6F3 /* ViewController.m in Sources */,
+				40A823A725EAA70F0081E6F3 /* TypeConvert.m in Sources */,
 				40A8235325E989910081E6F3 /* AppDelegate.m in Sources */,
-				40A8238C25E989D30081E6F3 /* UIParser.m in Sources */,
+				40A823A025EA9F930081E6F3 /* JSEngine.m in Sources */,
+				40A823C025EACA390081E6F3 /* UIView+JSExport.m in Sources */,
 				40A8236425E989930081E6F3 /* main.m in Sources */,
 				40A8235625E989910081E6F3 /* SceneDelegate.m in Sources */,
 			);
@@ -463,6 +627,7 @@
 		};
 		40A8237E25E989930081E6F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7168F069311D92EEF6346EC1 /* Pods-JavaScriptUIBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +645,7 @@
 		};
 		40A8237F25E989930081E6F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8261EDA7068EB0EA78F96E41 /* Pods-JavaScriptUIBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +663,7 @@
 		};
 		40A8238125E989930081E6F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21F47F343D9829988C81DE0 /* Pods-JavaScriptUIBoxTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +684,7 @@
 		};
 		40A8238225E989930081E6F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781CBF5172FED55182ACBD98 /* Pods-JavaScriptUIBoxTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +705,7 @@
 		};
 		40A8238425E989930081E6F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BAFE32A1BE08AFDE49E2623 /* Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VF89SJS4E3;
@@ -555,6 +724,7 @@
 		};
 		40A8238525E989930081E6F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6799D68C897CDF302026A9 /* Pods-JavaScriptUIBox-JavaScriptUIBoxUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VF89SJS4E3;
