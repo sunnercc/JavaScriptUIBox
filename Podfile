@@ -6,6 +6,7 @@ target 'JavaScriptUIBox' do
   use_frameworks!
 
   # Pods for JavaScriptUIBox
+  pod 'Masonry'
 
   target 'JavaScriptUIBoxTests' do
     inherit! :search_paths

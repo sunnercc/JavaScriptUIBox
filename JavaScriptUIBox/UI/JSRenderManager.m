@@ -9,6 +9,8 @@
 #import "JSRenderManager.h"
 #import "TypeConvert.h"
 #import "ColorConvert.h"
+#import <Masonry/Masonry.h>
+#import "LayoutConstraintMaker.h"
 
 @implementation JSRenderManager
 
@@ -24,17 +26,17 @@
         JSValue *props = view[@"props"];
         CGRect rect = [[props[@"rect"] toObject] CGRectValue];
         UIView *curView = [[UIView alloc] initWithFrame:rect];
-        
-        UIColor *backgroundColor = [props[@"backgroundColor"] toObject];
-        curView.backgroundColor = backgroundColor;
+
+        UIColor *bgColor = [props[@"bgColor"] toObject];
+        curView.backgroundColor = bgColor;
         [superView addSubview:curView];
-        
-        // 解析layout
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            JSValue *layout = view[@"layout"];
-            [layout callWithArguments:@[@1, curView]];
-        });
-        
+
+        // 解析 layout
+        JSValue *layout = view[@"layout"];
+        [curView mas_makeConstraints:^(MASConstraintMaker *make) {
+            LayoutConstraintMaker *maker = [[LayoutConstraintMaker alloc] initWithMasConstraintMaker:make];
+            [layout callWithArguments:@[maker, curView]];
+        }];
     }
 }
 
